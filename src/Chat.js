@@ -6,6 +6,7 @@ import React from 'react'
 import "./Chat.css"
 
 function Chat() {
+    var today = new Date();
     return (
         <div className = "chat"> 
             <div className = "chat__header">
@@ -34,19 +35,19 @@ function Chat() {
                 <p className = "chat__message">
                     <span className = "chat__name">Vishesh</span>
                         This is a message
-                    <span className = "chat__timestamp">{new Date().toUTCString()}</span>
+                    <span className = "chat__timestamp">{today.getHours() + ":" + today.getSeconds()}</span>
                 </p>
 
                 <p className = "chat__message chat__reciever">
                     <span className = "chat__name">Yaashie</span>
                         This is a message
-                    <span className = "chat__timestamp">{new Date().toUTCString()}</span>
+                    <span className = "chat__timestamp">{today.getHours() + ":" + today.getSeconds()}</span>
                 </p>
 
                 <p className = "chat__message">
                     <span className = "chat__name">Vishesh</span>
                         This is a message
-                    <span className = "chat__timestamp">{new Date().toUTCString()}</span>
+                    <span className = "chat__timestamp">{today.getHours() + ":" + today.getSeconds()}</span>
                 </p>
             </div>
 
