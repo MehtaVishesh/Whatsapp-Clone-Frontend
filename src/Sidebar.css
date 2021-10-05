@@ -8,7 +8,8 @@
     display: flex;  
     justify-content: space-between;
     padding: 20px;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid rgb(78, 75, 75);
+    background-color: rgb(56, 53, 53);
 }
 
 .sidebar__headerRight {
@@ -16,6 +17,7 @@
     align-items: center;
     justify-content: space-between;
     min-width: 10vw;
+    
 }
 
 .sidebar__headerRight > .MuiSvgIcon-root {
@@ -26,15 +28,18 @@
 .sidebar__search {
     display: flex;
     align-items: center;
-    background-color: #f8f6f6;
+    background-color: rgb(18, 27, 34);
     height: 39px;
     padding: 10px;
+    border: 0.5px solid rgb(78, 75, 75);
+    border-top: none;
+
 }
 
 .sidebar__searchContainer {
     display: flex;  
     align-items: center;
-    background-color: white;
+    background-color: rgb(56, 53, 53);
     width: 100%;
     height: 35px;
     border-radius: 20px;
@@ -46,10 +51,15 @@
 }
 
 .sidebar__searchContainer > input {
+    display: flex;
     border: none;
     box-shadow: none;
-    outline-width: 0;
-    margin-left: 10px;
+    flex: 1;
+    padding:  10px;
+    border-radius: 20px;
+    outline: none;
+    margin-left: 0px;
+    background-color: rgb(56, 53, 53);
 }
 
 .sidebar__chats {
