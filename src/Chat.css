@@ -29,6 +29,11 @@
     color: lightgray;
 }
 
+.chat__header > .chat__headerRight > .MuiSvgIcon-root{
+    color: gray;
+    padding: 10px;
+}
+
 .chat__body {
     flex: 1;
     background-image: url(/Users/visheshmehta/Desktop/Whatsapp_Clone/whatsapp-mern/src/chatBackground.jpg);

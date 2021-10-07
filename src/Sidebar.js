@@ -2,7 +2,7 @@ import React from 'react'
 import "./Sidebar.css"
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import ChatIcon from '@mui/icons-material/Chat';
-import { Avatar, IconButton } from '@mui/material';
+import { Avatar } from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { SearchOutlined } from "@material-ui/icons";
 import SidebarChat from './SidebarChat';
@@ -14,17 +14,9 @@ function Sidebar() {
             <div className = "sidebar__header">
                 <Avatar src = {MyProfilePicture}/>
                 <div className = "sidebar__headerRight">
-                    <IconButton>  
-                    < DonutLargeIcon />
-                    </IconButton>
-
-                    <IconButton>
-                        <ChatIcon />
-                    </IconButton>
-
-                    <IconButton>
-                        <MoreVertIcon />
-                    </IconButton>
+                    <DonutLargeIcon />
+                    <ChatIcon />
+                    <MoreVertIcon />
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 import { AttachFile, MoreVert, SearchOutlined } from '@material-ui/icons';
-import { Avatar, IconButton } from "@material-ui/core";
+import { Avatar } from "@material-ui/core";
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import MicIcon from '@mui/icons-material/Mic';
 import React, {useState} from 'react';
@@ -20,6 +20,7 @@ function Chat( { messages } ) {
             received: true, 
         });
 
+        
     };
 
     return (
@@ -32,17 +33,9 @@ function Chat( { messages } ) {
                 </div>
 
                 <div className = "chat__headerRight">
-                    <IconButton>  
-                        < SearchOutlined />
-                    </IconButton>
-
-                    <IconButton>
-                        <AttachFile />
-                    </IconButton>
-
-                    <IconButton>
-                        <MoreVert />
-                    </IconButton>
+                    < SearchOutlined />
+                    <AttachFile />
+                    <MoreVert />
                 </div>
             </div> 
 
