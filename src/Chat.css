@@ -42,6 +42,8 @@
     margin-right: 2vw;
     color: gray;
     padding: 1px;
+    display: flex;
+    flex: 0.5;
 }
 
 .chat__body {

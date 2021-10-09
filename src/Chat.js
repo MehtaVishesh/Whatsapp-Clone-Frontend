@@ -1,4 +1,4 @@
-import { AttachFile, MoreVert, SearchOutlined } from '@material-ui/icons';
+import { MoreVert, SearchOutlined, AttachFile } from '@material-ui/icons';
 import { Avatar } from "@material-ui/core";
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import MicIcon from '@mui/icons-material/Mic';
@@ -34,7 +34,6 @@ function Chat( { messages } ) {
 
                 <div className = "chat__headerRight">
                     < SearchOutlined />
-                    <AttachFile />
                     <MoreVert />
                 </div>
             </div> 
@@ -53,6 +52,7 @@ function Chat( { messages } ) {
 
             <div  className = "chat__footer">
                 <InsertEmoticonIcon /> 
+                <AttachFile />
                 <form>
                     <input value = {input} 
                     onChange = {e => setInput(e.target.value)} 
