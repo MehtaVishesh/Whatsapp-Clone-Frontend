@@ -6,6 +6,7 @@
 }
 
 .chat__header {
+    justify-content: space-between;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -29,9 +30,18 @@
     color: lightgray;
 }
 
+.chat__headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10vw;
+}
+
 .chat__header > .chat__headerRight > .MuiSvgIcon-root{
+    font-size: 24px !important;
+    margin-right: 2vw;
     color: gray;
-    padding: 10px;
+    padding: 1px;
 }
 
 .chat__body {
