@@ -15,7 +15,7 @@ function Chat( { messages } ) {
         await axios.post('/messages/new', 
         {
             message: input,
-            name: "Vishesh",
+            name: "Your Name",
             timestamp: "rn",
             received: true, 
         });
@@ -28,7 +28,7 @@ function Chat( { messages } ) {
             <div className = "chat__header">
                 <Avatar />
                 <div className = "chat__headerInfo">
-                    <h3>Yaashie</h3>
+                    <h3>User</h3>
                     <p>online</p>
                 </div>
 
